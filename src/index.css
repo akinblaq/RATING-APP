@@ -222,7 +222,7 @@ h1 {
   .star-div {
     gap: 0.4rem;
     padding-right: 0.3rem;
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .confirm-msg {
