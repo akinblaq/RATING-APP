@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Orange-500: hsl(25, 97%, 53%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-900: hsl(217, 23%, 15%);
+  --Grey-920: hsl(214, 14%, 22%);
+  --Grey-950: hsl(216, 12%, 8%);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+  background: var(--Grey-950);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* RATING SESSION EDDIT */
+.app {
+  width: 350px;
+}
+
+.card {
+  background: var(--Grey-900);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  color: var(--White);
+  font-weight: 700;
+}
+
+.star-div {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 1rem;
+  gap: 1.8rem;
+}
+
+.star-wrapper {
+  background-color: var(--Grey-920);
+  padding: 7px;
+  padding-top: 3px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.star-wrapper:hover {
+  background-color: var(--Grey-900);
+}
+
+.fa-star {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-top: 3px;
+}
+
+.confirm-msg {
+  font-size: 0.7rem;
+  color: rgb(120, 184, 120);
+  margin-top: 0.75rem;
+  text-align: end;
+}
+
+.first-p {
+  color: var(--Grey-500);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.rating-options {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.rating-btn {
+  background: var(--Grey-920);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: var(--Grey-500);
+  font-family: "Overpass", sans-serif;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+
+.rating-btn.selected {
+  background: var(--White);
+  color: var(--Grey-900);
+}
+
+.rating-btn:hover {
+  background: var(--Orange-500);
+}
+
+.rating-btn:focus {
+  outline: 2px solid #333;
+}
+
+.submit-btn {
+  background: var(--Orange-500);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+  color: var(--Grey-950);
+  padding: 0.9rem 7.4rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--White);
+}
+
+.error {
+  color: rgb(220, 82, 82);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  font-family: "Overpass", sans-serif;
+}
+
+/* THANKING YOU SESSION EDIT */
+
+.card-2 {
+  background: var(--Grey-900);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: var(--White);
+}
+
+.logo {
+  width: 6rem;
+  margin: 0 6rem;
+  margin-bottom: 0.5rem;
+}
+
+.rate-number {
+  background: var(--Grey-920);
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  height: 35px;
+  margin: auto;
+}
+
+.p1 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 0.6rem;
+  color: var(--Orange-500);
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.p2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--Grey-500);
+  padding: 0 5px 0 5px;
+}
+
+.rate-again-btn {
+  background: var(--Orange-500);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+  color: var(--Grey-950);
+  padding: 0.9rem 6.8rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rate-again-btn:hover {
+  background: var(--White);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 375px) {
+  /* ======= RATING EDIT ======== */
+  .app {
+    width: 90%;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-left: 1.5rem;
+  }
+
+  .star-div {
+    gap: 0.4rem;
+    padding-right: 0.3rem;
+    justify-content: space-between;
+  }
+
+  .confirm-msg {
+    text-align: center;
+  }
+
+  .rating-options {
+    gap: 0.7rem;
+  }
+
+  .rating-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .error {
+    font-size: 0.8rem;
+  }
+
+  /* ========= THANK YOU EDDIT ======= */
+
+  .card-2 {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-left: 1.5rem;
+  }
+
+  .logo {
+    width: 4rem;
+    margin: 0 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .rate-number {
+    background: var(--Grey-920);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 35px;
+    margin: auto;
+  }
+
+  .p1 {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 0.6rem;
+    color: var(--Orange-500);
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+
+  .p2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--Grey-500);
+    padding: 0 5px 0 5px;
+  }
+
+  .rate-again-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
