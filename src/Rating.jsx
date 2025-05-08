@@ -14,7 +14,7 @@ export default function Rating({ rating, setRating, handleSubmit, showError }) {
               <FaStar
                 className="fa-star"
                 size={24}
-                color={starValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
+                color={starValue <= (hover || rating) ? "#ffc107" : "#ffc107"}
                 onClick={() => setRating(starValue)}
                 onMouseEnter={() => setHover(starValue)}
                 onMouseLeave={() => setHover(null)}
