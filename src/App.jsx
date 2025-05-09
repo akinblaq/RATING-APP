@@ -31,6 +31,7 @@ export default function App() {
           setRating={setRating}
           handleSubmit={handleSubmit}
           showError={showError}
+          ShowThankYou={ShowThankYou}
         />
       ) : (
         <ThankYou rating={rating} handleReset={handleReset} />

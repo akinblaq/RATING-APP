@@ -44,10 +44,6 @@ body {
   font-weight: 700;
 }
 
-.card {
-  animation: bounceFade 3s ease;
-}
-
 .star-div {
   display: flex;
   justify-content: start;
