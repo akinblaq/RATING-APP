@@ -44,6 +44,10 @@ body {
   font-weight: 700;
 }
 
+.card {
+  animation: bounceFade 2s ease;
+}
+
 .star-div {
   display: flex;
   justify-content: start;
@@ -171,6 +175,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: var(--White);
+}
+
+.card-2 {
+  animation: bounceFade 2s ease;
 }
 
 .logo {
