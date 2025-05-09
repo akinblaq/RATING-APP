@@ -45,7 +45,7 @@ body {
 }
 
 .card {
-  animation: bounceFade 2s ease;
+  animation: bounceFade 3s ease;
 }
 
 .star-div {
@@ -178,7 +178,7 @@ body {
 }
 
 .card-2 {
-  animation: bounceFade 2s ease;
+  animation: bounceFade 3s ease;
 }
 
 .logo {
